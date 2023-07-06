@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home',[UserOtpController::class,'home'])->name('home');
-Route::get('/',[UserOtpController::class,'otpLogin'])->name('otpLogin');
+// Route::get('/',[UserOtpController::class,'otpLogin'])->name('otpLogin');
 Route::post('/otp',[UserOtpController::class,'generate'])->name('otpgenerate');
 // Route::post('/',[UserOtpController::class,'generate'])->name('otp_generate');
 // Route::post('/', [UserOtpController::class, 'generate'])->name('otpgenerate');
